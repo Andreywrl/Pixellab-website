@@ -5,30 +5,30 @@ export default function Upgrades() {
     return (
         <Grid
             container
-            direction="column"
-            justifyContent="space-evenly"
-            alignItems="center"
+            justifyContent="center"
+            spacing={2}
         >
-            <Grid item>
-                <Typography>
+            <Grid item xs={10}>
+                <Typography color={'secondary'} variant="subtitle1">
                     Serviços opcionais
                 </Typography>
-                <Typography>
+                <Typography variant="h3">
                     Seu projeto também pode incluir
                 </Typography>
             </Grid>
             {
                 UpgradesContent.map((obj) => {
                     return (
-                        <Grid item>
+                        <Grid item xs={9.87} key={obj.id}>
                             <Card>
-                                {obj.title}
+                                <Typography>
+                                    {obj.title}
+                                </Typography>
                             </Card>
                         </Grid>
                     )
                 })
             }
         </Grid>
-
     )
 }

@@ -1,7 +1,11 @@
-export default function Footer () {
+import { Box, Typography } from "@mui/material"
+
+export default function Footer() {
     return (
-        <div>
-            <h1>Footer</h1>
-        </div>
+        <Box sx={{bgcolor: '#0B225C'}}>
+            <Typography variant="h1">
+                Footer
+            </Typography>
+        </Box>
     )
 }
