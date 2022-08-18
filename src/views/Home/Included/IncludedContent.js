@@ -1,18 +1,18 @@
-import ColorizeIcon from '@mui/icons-material/Colorize';
+import DesignServicesIcon from '@mui/icons-material/DesignServices';
 import AccountTreeIcon from '@mui/icons-material/AccountTree';
 import GoogleIcon from '@mui/icons-material/Google';
-import ImportantDevicesIcon from '@mui/icons-material/ImportantDevices';
+import DevicesOtherIcon from '@mui/icons-material/DevicesOther';
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 import FingerprintIcon from '@mui/icons-material/Fingerprint';
 import StorageIcon from '@mui/icons-material/Storage';
 import LanguageIcon from '@mui/icons-material/Language';
 
-const IconTheme = { color: '#FF006B', fontSize: '2.19em' };
+const IconTheme = { color: '#FF006B', fontSize: '2.5em' };
 
 export const IncludedContent = [
     {
         key: 1,
-        icon: <ColorizeIcon sx={IconTheme} />,
+        icon: <DesignServicesIcon sx={IconTheme} />,
         title: 'Design Personalizado',
         description: 'Sites construídos com a identidade do seu negócio em mente'
     },
@@ -30,7 +30,7 @@ export const IncludedContent = [
     },
     {
         key: 4,
-        icon: <ImportantDevicesIcon sx={IconTheme} />,
+        icon: <DevicesOtherIcon sx={IconTheme} />,
         title: 'Otimização para dispositivos',
         description: 'Sites bonitos e funcionais em qualquer tela'
     },
@@ -38,7 +38,7 @@ export const IncludedContent = [
         key: 5,
         icon: <AlternateEmailIcon sx={IconTheme} />,
         title: 'Email Corporativo',
-        description: 'Email personalizado com o nome e domínio de sua empresa. Protege sua marca e transmite credibilidade aos clientes.'
+        description: 'Email personalizado com o nome e domínio de sua empresa. Protege sua marca e transmite credibilidade aos clientes'
     },
     {
         key: 6,

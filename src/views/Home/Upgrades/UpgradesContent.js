@@ -1,7 +1,7 @@
 export const UpgradesContent = [
     {
         id: 1,
-        title: 'Dashboard de controle'
+        title: 'Copywriting'
     },
     {
         id: 2,
@@ -9,6 +9,10 @@ export const UpgradesContent = [
     },
     {
         id: 3,
+        title: 'Dashboard de controle'
+    },
+    {
+        id: 4,
         title: 'Facebook, Insta e Google Ads'
     }
 ]

@@ -1,0 +1,1 @@
+export const linkWhatsApp = 'https://api.whatsapp.com/send?phone=5551994498561&text=Ol%C3%A1%2C%20tudo%20certo%3F%20Te%20encontrei%20pelo%20link%20no%20site%20da%20PixelLab%20e%20gostaria%20de%20saber%20mais%20sobre%20suas%20solu%C3%A7%C3%B5es!';
