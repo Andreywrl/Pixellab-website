@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Box, Button, CardMedia, useTheme } from '@mui/material';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import WhiteLogo from '../../assets/Logo/WhiteLogo.svg';
+import WhiteLogo from '../../assets/Logo/WhiteLogo.png';
 import { transitionLeft, transitionRight } from '../../styles/Transitions';
 import { linkWhatsApp } from '../../components/links';
 
@@ -52,7 +52,7 @@ export default function Header() {
                 <CardMedia
                     component='img'
                     image={WhiteLogo}
-                    alt='Pixel Lab'
+                    alt='Spítha'
                     onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                     sx={{
                         transitionLeft,

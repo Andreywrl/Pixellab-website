@@ -21,9 +21,10 @@ export const Contacts = () => {
 
     const buttonStyle = {
         mt: {
-            xs: '0.4em',
+            xs: '0.5em',
             sm: '1em'
         },
+        height: '3em',
         color: theme.palette.common.white,
         WebkitTransition: 'all .3s ease',
         MozTransition: 'all .3s ease',
@@ -64,8 +65,8 @@ export const Contacts = () => {
                         textAlign: 'left',
                         color: theme.palette.common.white
                     }}>
-                    Fazemos ideias
-                    malucas virarem realidade
+                    Fazemos suas melhores ideias
+                    virarem realidade
                 </Typography>
                 <Box sx={{
                     maxWidth: '13.1875em',
@@ -80,7 +81,7 @@ export const Contacts = () => {
                         startIcon={<PhoneIcon sx={startIconStyle} />}
                         variant='text'
                         target='blank'
-                        href='tel:+5551994498561'
+                        href='tel:+5551995306894'
                         sx={buttonStyle}>
                         <Typography sx={{
                             fontSize: {
@@ -88,7 +89,7 @@ export const Contacts = () => {
                                 sm: '1.25em'
                             }
                         }}>
-                            (51) 9 9449-8561
+                            (51) 9 9530-6894
                         </Typography>
                     </Button>
                     <Button
@@ -110,7 +111,7 @@ export const Contacts = () => {
                         startIcon={<EmailIcon sx={startIconStyle} />}
                         variant='text'
                         target='blank'
-                        href='mailto:contato@pixellab.com'
+                        href='mailto:contato@spitha.com.br'
                         sx={buttonStyle}>
                         <Typography sx={{
                             fontSize: {
@@ -118,7 +119,7 @@ export const Contacts = () => {
                                 sm: '1.25em'
                             },
                         }}>
-                            contato@pixellab.com
+                            contato@spitha.com.br
                         </Typography>
                     </Button>
                 </Box>

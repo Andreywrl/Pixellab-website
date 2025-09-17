@@ -1,5 +1,6 @@
 import { Box, Card, Grid, Typography } from '@mui/material';
 import { useTheme } from '@mui/material';
+import { CustomTransition } from '../../../components/Transitions';
 import { IncludedContent } from './IncludedContent';
 
 export default function Included() {
@@ -21,24 +22,28 @@ export default function Included() {
             }}
         >
             <Grid item xs={10}>
-                <Typography
-                    color={'secondary'}
-                    variant='subtitle1'
-                    sx={{
-                        textAlign: 'center',
-                    }}>
-                    Nosso pacote
-                </Typography>
-                <Typography
-                    variant='h2'
-                    color='primary'
-                    sx={{
-                        textAlign: 'center',
-                        mt: '0.5em',
-                        mb: { sm: '0.5em' }
-                    }}>
-                    Todos nossos projetos já incluem
-                </Typography>
+                <CustomTransition>
+                    <Typography
+                        color={'secondary'}
+                        variant='subtitle1'
+                        sx={{
+                            textAlign: 'center',
+                        }}>
+                        Nosso pacote
+                    </Typography>
+                </CustomTransition>
+                <CustomTransition>
+                    <Typography
+                        variant='h2'
+                        color='primary'
+                        sx={{
+                            textAlign: 'center',
+                            mt: '0.5em',
+                            mb: { sm: '0.5em' }
+                        }}>
+                        Todos nossos projetos já incluem
+                    </Typography>
+                </CustomTransition>
             </Grid>
             {
                 IncludedContent.map((obj) => {
@@ -48,36 +53,38 @@ export default function Included() {
                             xs={10.5}
                             sm={4.81}
                             lg={2.625}>
-                            <Card sx={{
-                                flexDirection: 'column',
-                                textAlign: 'center',
-                                alignItems: 'center',
-                                height: '13em',
-                            }}>
-                                <Box
-                                    sx={{ mt: '1.3em' }}>
-                                    {obj.icon}
-                                </Box>
-                                <Typography
-                                    variant='h4'
-                                    sx={{
-                                        color: theme.palette.text.primary,
-                                        m: '0.6em 0.5em 0.5em',
-                                        alignItems: 'center'
-                                    }}>
-                                    {obj.title}
-                                </Typography>
-                                <Typography
-                                    variant='body2'
-                                    sx={{
-                                        color: theme.palette.text.secondary,
-                                        margin: 'auto',
-                                        width: '90%',
-                                        maxWidth: '90%'
-                                    }}>
-                                    {obj.description}
-                                </Typography>
-                            </Card>
+                            <CustomTransition>
+                                <Card sx={{
+                                    flexDirection: 'column',
+                                    textAlign: 'center',
+                                    alignItems: 'center',
+                                    height: '13em',
+                                }}>
+                                    <Box
+                                        sx={{ mt: '1.3em' }}>
+                                        {obj.icon}
+                                    </Box>
+                                    <Typography
+                                        variant='h4'
+                                        sx={{
+                                            color: theme.palette.text.primary,
+                                            m: '0.6em 0.5em 0.5em',
+                                            alignItems: 'center'
+                                        }}>
+                                        {obj.title}
+                                    </Typography>
+                                    <Typography
+                                        variant='body2'
+                                        sx={{
+                                            color: theme.palette.text.secondary,
+                                            margin: 'auto',
+                                            width: '90%',
+                                            maxWidth: '90%'
+                                        }}>
+                                        {obj.description}
+                                    </Typography>
+                                </Card>
+                            </CustomTransition>
                         </Grid>
                     );
                 })

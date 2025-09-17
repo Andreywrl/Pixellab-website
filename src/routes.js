@@ -3,18 +3,22 @@ import Footer from './layout/Footer';
 import Header from './layout/Header';
 import Home from './views/Home';
 import NotFound from './views/NotFound';
+import AcceptTerms from './components/AcceptTerms';
 
 function Router() {
     return (
-        <BrowserRouter>
-            <Header />
-            <Routes>
-                <Route path='*' element={<NotFound />} />
-                <Route exact path='/' element={<Home />} />
-            </Routes>
-            <Footer />
-        </BrowserRouter>
-    )
-}
+        <>
+            <AcceptTerms />
+            <BrowserRouter>
+                <Header />
+                <Routes>
+                    <Route path='*' element={<NotFound />} />
+                    <Route exact path='/' element={<Home />} />
+                </Routes>
+                <Footer />
+            </BrowserRouter>
+        </>
+    );
+};
 
 export default Router;

@@ -13,16 +13,11 @@ export const IconsButtons = [
     {
         title: 'Instagram',
         icon: <InstagramIcon sx={iconStyle} />,
-        link: 'https://www.instagram.com/pixellab.online/',
+        link: 'https://www.instagram.com/spitha.digital/',
     },
     {
         title: 'LinkedIn',
         icon: <LinkedInIcon sx={iconStyle} />,
-        link: 'https://www.instagram.com/pixellab.online/',
+        link: 'https://br.linkedin.com/company/spitha-digital',
     },
-    {
-        title: 'Facebook',
-        icon: <FacebookIcon sx={iconStyle} />,
-        link: 'https://www.facebook.com/pixellab.online',
-    }
 ]

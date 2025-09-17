@@ -1,7 +1,7 @@
 import { Box, Link, Typography, IconButton, Tooltip, Divider, useTheme } from '@mui/material'
 import { IconsButtons } from './IconsButtons';
-import termosDeUso from '../../assets/PDF/Termos e Condições - PixelLab.pdf';
-import polDePriv from '../../assets/PDF/Política Privacidade - PixelLab.pdf';
+import termosDeUso from '../../assets/PDF/Termos e Condições - PixelLb.pdf';
+import polDePriv from '../../assets/PDF/Política Privacidade - PixelLb.pdf';
 
 export default function Footer() {
 
@@ -9,6 +9,10 @@ export default function Footer() {
 
     const contactStyle = {
         color: theme.palette.common.white,
+        lineHeight: {
+            xs: '3em',
+            sm: '2em'
+        },
         WebkitTransition: 'all .3s ease',
         MozTransition: 'all .3s ease',
         transition: 'all .3s ease',
@@ -18,7 +22,9 @@ export default function Footer() {
             MozTransition: 'all .3s ease',
             transition: 'all .3s ease',
         }
-    }
+    };
+
+    const currentYear = new Date().getFullYear();
 
     return (
         <Box sx={{
@@ -41,19 +47,19 @@ export default function Footer() {
             }}>
                 <Box>
                     <Typography variant='h3' color={theme.palette.common.white} sx={{ mb: '0.8em', }}>
-                        PIXEL LAB
+                        Spítha
                     </Typography>
-                    <Link target='blank' href='tel:+5551994498561' sx={{
+                    <Link target='blank' href='tel:+5551995306894' sx={{
                         textDecoration: 'none',
                     }} >
                         <Typography variant='body2' color={theme.palette.common.white} sx={{
                             ...contactStyle,
-                            mt: '0.5em'
+                            mt: '0.5em',
                         }}>
-                            (51) 9 9449-8561
+                            (51) 9 9530-6894
                         </Typography>
                     </Link>
-                    <Link target='blank' href='mailto:contato@pixellab.com' sx={{
+                    <Link target='blank' href='mailto:contato@spitha.com.br' sx={{
                         textDecoration: 'none'
                     }} >
                         <Typography variant='body2' color={theme.palette.common.white}
@@ -61,7 +67,7 @@ export default function Footer() {
                                 ...contactStyle,
                                 mt: '0.5em'
                             }}>
-                            contato@pixellab.com
+                            contato@spitha.com.br
                         </Typography>
                     </Link>
                 </Box>
@@ -157,10 +163,10 @@ export default function Footer() {
                                 lg: '0.875em',
                             }
                         }}>
-                        © 2022 Pixel Lab - Todos os direitos reservados
+                        © {currentYear} Spítha - Todos os direitos reservados
                     </Typography>
                 </Box>
             </Box>
         </Box>
-    )
-}
+    );
+};

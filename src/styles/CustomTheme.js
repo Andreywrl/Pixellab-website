@@ -59,7 +59,8 @@ theme = createTheme(theme, {
             main: '#0B225C',
             light: '#D4DCEE',
             dark: '#07163b',
-            glass: 'rgba(11, 34, 92, 0.25)'
+            glass: 'rgba(11, 34, 92, 0.25)',
+            bgColor: '#F2F4FA'
         },
         secondary: {
             main: '#FF006B',
@@ -70,9 +71,6 @@ theme = createTheme(theme, {
             primary: '#494949',
             secondary: '#727272'
         },
-        bodybackg: {
-            main: '#F2F4FA'
-        }
     },
     shape: {
         borderRadius: 8

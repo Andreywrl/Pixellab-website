@@ -19,13 +19,13 @@ export const IncludedContent = [
     {
         key: 2,
         icon: <AccountTreeIcon sx={IconTheme} />,
-        title: 'Desenvolvido com UX/UI',
+        title: 'Desenvolvimento com UX/UI',
         description: 'Sites que entendem e resolvem as dificuldades da sua empresa e de seus clientes'
     },
     {
         key: 3,
         icon: <GoogleIcon sx={IconTheme} />,
-        title: 'Otimizado para pesquisas',
+        title: 'Otimização para pesquisas',
         description: 'Melhora o posicionamento do site nas buscas, aumentando o número de visitas'
     },
     {
@@ -43,7 +43,7 @@ export const IncludedContent = [
     {
         key: 6,
         icon: <FingerprintIcon sx={IconTheme} />,
-        title: 'Certificado SSL',
+        title: 'Certificação SSL',
         description: 'Processo que assegura ao visitante do site que apenas dados permitidos por ele são coletados/armazenados'
     },
     {
